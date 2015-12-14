@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.atmosphere.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"  href="css/person.css">
+<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+<script type=text/javascript src="dist/sweetalert.min.js"></script>
+
+<script src="js/phaser.min.js"></script>
+<script src="js/game_over.js"></script>
+<script src="js/game2.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scripts.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tron Game</title>
+
+    <style>
+        p {
+            line-height: 18px;
+        }
+        #content {
+            padding: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            margin-top: 10px;
+        }
+
+        #header {
+            padding: 5px;
+            background: #f5deb3;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            margin-top: 10px;
+        }
+
+        #input {
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 5px;
+            width: 400px;
+        }
+
+        #status {
+            width: 88px;
+            display: block;
+            float: left;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body onload="checkCookie()">
+<div id="header"><h3>Atmosphere Chat. Default transport is WebSocket, fallback is long-polling</h3></div>
+<div id="content"></div>
+<div>
+    <span id="status">Connecting...</span>
+    <input type="text" id="input" disabled="disabled"/>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav ">
+                <li><a href="/">Home</a> </li>
+                <li><a href="/About">About</a> </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <a id="Nick" class="navbar-brand navbar-right">Welcome Stranger !</a>
+            <script>
+                setUsername();
+            </script>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid body-bg text-center">
+    <img src="image/game.png" class="img-rounded" style="display:inline" alt="Game" width="350" height="350">
+    <div class="container-fluid body-bg text-center" id="mainContent" tabindex="1"></div>
+    <h4>Website is under construction</h4>
+    <h4>Please come back later</h4>
+</div>
+
+</body>
+</html>

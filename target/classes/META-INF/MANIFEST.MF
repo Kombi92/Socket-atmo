@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: intern
+Build-Jdk: 1.8.0_65
+Implementation-Title: Dropwizard Example Application
+Implementation-Version: 0.6.2
+Implementation-Vendor-Id: com.yammer.dropwizard
+Created-By: Maven Integration for Eclipse
+
